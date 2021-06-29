@@ -51,3 +51,27 @@ int main ()
 
     return 0 ;
 }
+// To check Mulitples 
+{
+    int num ;
+    printf("Enter a number\n ");
+    scanf("%d",&num);
+
+    if(num%3==0)
+    {
+        printf("The num %d is a multiple of 3",num);
+    }
+    else if (num%7==0)
+    {
+        printf("The num %d is a multiple of 7",num);
+    }
+    else if ((num%3==0) && (num%7==0)) //this is not applying to 21
+    {
+        printf("The num %d is a multiple of 3 and 7",num);
+    }
+    else
+    {
+        printf("The num %d is not a multiple of neither 3 nor 7 ",num);
+    }
+    return 0 ;
+}
