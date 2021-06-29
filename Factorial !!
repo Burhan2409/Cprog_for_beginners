@@ -1,0 +1,16 @@
+include<stdio.h>
+include<stdlib.h>
+int main()
+{
+    double n , fac=1 ;
+    printf("Enter a natural number:");
+    scanf("%lf",&n);
+
+    for(int i=1;i<=n;++i)
+        {
+            fac*=i;
+        }
+    printf("The factorial of %6.2lf is :%6.2lf\n",n,fac);
+
+        return 0 ;
+}
