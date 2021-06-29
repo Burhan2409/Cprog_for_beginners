@@ -1,0 +1,48 @@
+inlcude<stdio.h>
+include<stdlib.h>
+int main()
+{
+    int data[10] ;
+    int low = 0 , high = 9 , number ;
+    int mid = (low + high)/2 ;
+    
+    printf("\n These are the numbers for array input :\n");
+    
+    for(int i =0 ; i<10 ; i++)
+    {
+        printf("Enter a number :\n");
+        scanf("%d",&data[i]);
+    }
+    
+    printf("Enter a number from the array to find the position :\n");
+    scanf("%d",&number);
+    
+    while(low<=high)
+    {
+        mid = (low+high)/2;
+        
+        if(data[mid]==number)
+        {
+            printf("The number is found at %d position .\n",mid+1);
+            break;
+        }
+        else if (data[mid]<number)
+        {
+            low=(mid + 1) ;
+            /*printf("The number is found at %d position .\n",low);
+            break;*/
+      }
+        else if (data[mid]>number)
+        {
+            high=(mid-1);
+            /*printf("The number is found at %d position .\n",high);
+            break;*/
+        }
+        if(low>high)
+        {
+            printf("Number not found");
+        }
+    }
+    
+    return 0 ;
+}
