@@ -1,0 +1,15 @@
+include<stdio.h>
+include<stdlib.h>
+int main()
+{
+    int a , b ;
+    printf("Enter the value of a\t");
+    scanf("%d",&a);
+    printf("enter the value of b\t");
+    scanf("%d",&b);
+    float sum=a+b;
+        printf("The sum of values %d and %d is %.2f\n",a,b,sum);
+    float average=sum/2;
+    printf("the average of %.2f is %.2f",sum,average);
+    return 0;
+}
