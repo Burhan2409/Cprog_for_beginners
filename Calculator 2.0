@@ -1,0 +1,45 @@
+include<stdio.h>
+include<stdlib.h>
+int main()
+{
+    double num1 , num2 ;
+    char solve , a,b,c,d;
+
+    printf("Enter a number :");
+    scanf("%3lf",&num1);
+    printf("Enter a number :");
+    scanf("%3lf",&num2);
+
+    printf("Please enter a for addition\n");
+    printf("Please enter b for subtraction\n");
+    printf("Please enter c for multiplication\n");
+    printf("Please enter d for division\n");
+    scanf(" %c",&solve);
+
+    a='+';
+    b='-';
+    c='*';
+    d='/';
+
+    if(solve=='a')
+    {
+        printf("Answer is %3lf\n",num1+num2);
+    }
+    else if (solve=='b')
+    {
+        printf("Answer is %3lf\n",num1-num2);
+    }
+    else if (solve=='c')
+    {
+        printf("Answer is %3lf\n",num1*num2);
+    }
+    else if (solve=='d')
+    {
+        printf("Answer is %3lf\n",num1/num2);
+    }
+    else
+    {
+        printf("Incorrect Input\n");
+    }
+    return 0;
+}
