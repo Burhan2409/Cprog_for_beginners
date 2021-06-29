@@ -1,0 +1,30 @@
+include<stdio.h>
+include<stdlib.h>
+int main ()
+{
+    int distance_in_kms ;
+    float  distance_in_m , distance_in_cm , distance_in_ft , distance_in_inch , distance_in_miles;
+    int meter ;
+    printf("Enter the distance between two cities :\n");
+    scanf("%d",&distance_in_kms);
+
+    distance_in_m = distance_in_kms * 1000 ;
+    
+    printf ("The distance between two cities in meters is :%2.2f\n",distance_in_m);
+
+    distance_in_cm = distance_in_kms * 100000 ;
+
+    printf ("The distance between two cities in centimeters is :%2.2f\n",distance_in_cm);
+
+    distance_in_ft = distance_in_kms * 3280.8416 ;
+
+    printf ("The distance between two cities in feet is :%2.2f\n",distance_in_ft);
+
+    distance_in_inch = distance_in_kms * 39370.1 ;
+
+    printf ("The distance between two cities in inch is :%2.2f\n",distance_in_inch);
+    
+    distance_in_miles = distance_in_kms / 1.609 ;
+    
+    printf ("The distance between two cities in miles is :%2.2f\n",distance_in_miles);
+}
