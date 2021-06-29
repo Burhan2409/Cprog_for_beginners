@@ -1,0 +1,53 @@
+include<stdio.h>
+include<stdlib.h>
+int main ()
+// Odd or Even
+{
+    int num;
+    printf("Enter a num:\t");
+    scanf("%d",&num);
+
+    if ( num%2 == 0 )
+        printf("The num is even",num);
+            else
+                printf("The num is odd ",num);
+
+            return 0 ;
+
+}
+// Positive or Negative number
+{
+    int num ;
+    printf("enter a number:\n");
+    scanf("%d",&num);
+
+    if (num>0)
+    {
+        printf("The number is positive\n",num);
+    }
+    else if (num<0)
+    {
+        printf("the number is negative\n",num);
+    }
+    else
+    {
+        printf("the number is zero\n",num);
+    }
+    return 0 ;
+}
+// Using Ternary Operator to check three numbers 
+{
+    int num1 , num2 , num3 , result ;
+    printf("Enter number 1 :\n");
+    scanf("%d",&num1);
+    printf("Enter number 2 :\n");
+    scanf("%d",&num2);
+    printf("Enter number 3 :\n");
+    scanf("%d",&num3);
+
+    result = ((num1>num2) && (num1>num3)) ? num1 : ((num2>num3) && (num2>num1)) ? num2 : num3 ;
+
+    printf("The largest number among three numbers is %d\n",result);
+
+    return 0 ;
+}
