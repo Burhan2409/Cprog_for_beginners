@@ -1,0 +1,41 @@
+include<stdio.h>
+include<stdlib.h>
+int main()
+{
+    float num1 , num2 ;
+    char operator;
+    printf("Enter the first term :");
+    scanf("%f",&num1);
+    printf("Enter the second term :");
+    scanf("%f",&num2);
+    printf("Enter the operand\n");
+    scanf(" %c",&operator);
+
+    switch(operator)
+    {
+
+    case '+':
+    {
+    printf("%f + %f=%f\n",num1,num2,num1+num2);
+    break ;
+    }
+    case '-':
+    {
+    printf("%f - %f=%f\n",num1,num2,num1-num2);
+    break ;
+    }
+    case '*':
+    {
+    printf("%f * %f=%f\n",num1,num2,num1*num2);
+    break ;
+    }
+    case '/':
+    {
+    printf("%f / %f=%f\n",num1,num2,num1/num2);
+    break ;
+    }
+    default :
+    printf("Incorrect Input\n");
+
+    }
+}
